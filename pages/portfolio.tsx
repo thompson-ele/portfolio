@@ -12,22 +12,22 @@ const PortfolioRedesign: NextPage = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
   
-        <main>
+        <main className="container">
           <h1>Portfolio Redesign</h1>
           <p>The last time I updated my web portfolio was when I was preparing to interview for my current job at REVOLVE and let's be real: 
               the majority of devs don't update their portfolio unless they're on the job hunt. I also don't have a ton of free time to just be 
               creating web projects on the side between working full-time and my side hobbies or hustles. Work/life balance is definitely a priority 
-              for me.
+              for me.</p>
 
-              Because of this I decided the best way to show how I've progressed in the last 4-5 years or so would be for me to examine my old portfolio 
-              and see what things I would change if I were updating it with my current web knowledge.
+          <p>Because of this I decided the best way to show how I've progressed in the last 4-5 years or so would be for me to examine my old portfolio 
+              and see what things I would change if I were updating it with my current web knowledge.</p>
 
-              Some areas that I want to focus on include:
-
-              Semantic HTML
-              Web accessibility
-              User Experience
-          </p>
+          <p>Some areas that I want to focus on include:</p>
+          <ul>
+            <li>Semantic HTML</li>
+            <li>Web accessibility</li>
+            <li>User Experience</li>
+          </ul>
         </main>
         <footer></footer>
       </div>

@@ -1,9 +1,8 @@
-import react from 'react';
 import styled from 'styled-components';
 
 const Window = ({ children, heading = "❤️✨", ...props}) => {
     return (
-        <StyledWindow>
+        <StyledWindow {...props}>
             <WindowHead>
                 {heading} 
                 <WindowX />
@@ -14,19 +13,20 @@ const Window = ({ children, heading = "❤️✨", ...props}) => {
 }
 
 const StyledWindow = styled.div`
-    // background-color: #ffdde2;
     background-color: #fff;
     box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #ffdde2;
-    display: inline-flex;
-    flex-direction: column;
-    // font-family: 'Martel', serif;
     margin-bottom: 16px;
     padding: 3px;
+
+    @media only screen and (min-width: 992px) {
+        font-size: 20px;
+    }
 `;
 
 const WindowHead = styled.div`
     background-color: #4f64d5;
     color: #fff;
+    font-weight: 700;
     padding: 8px 16px;
     position: relative;
 `;
