@@ -2,13 +2,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 body {
-  background-color: #ffdde2;
-  opacity: 1;
-  background-image:  linear-gradient(#fff0f2 1.85px, transparent 1.85px), linear-gradient(to right, #fff0f2 1.85px, #ffdde2 1.85px);
+  background-color: #b2e5ff;
+  background-image: linear-gradient(#fff 1.5px, transparent 1.5px), linear-gradient(to right, #fff 1.5px, #b2e5ff 1.5px);
   background-size: 56px 56px;
 }
 
@@ -17,21 +16,135 @@ a {
   text-decoration: none;
 }
 
+img {
+  transform: translateZ(0);
+}
+
 * {
   box-sizing: border-box;
 }
 
+::selection {
+  background: #ffdde2;
+  color: #000;
+}
+
 p {
+  margin-bottom: 16px;
   margin-top: 0;
 }
 
+.checker-bg {
+  background-color: #b2e5ff;
+  opacity: 1;
+  background-image:  repeating-linear-gradient(45deg, #8857e6 25%, transparent 25%, transparent 75%, #8857e6 75%, #8857e6), repeating-linear-gradient(45deg, #8857e6 25%, #b2e5ff 25%, #b2e5ff 75%, #8857e6 75%, #8857e6);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+}
+
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
+}
+
+.hide-sm {
+  display: none;
+}
+
+.inline-list {
+  padding: 0;
+  list-style: none;
+}
+
+.inline-list > li {
+  display: block;
 }
 
 .intro-window {
-  max-width: 500px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.intro-window p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: #BBB;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration-style: wavy;
+}
+
+.nav-button {
+  background: silver;
+  border: none;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 4px 16px 6px;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
+.nav-button:active {
+  box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+}
+
+.social-icon {
+  display: inline-block;
+  height:20px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 16px;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .flex-child {
+    flex: 1;
+  }
+
+  .hide-sm {
+    display: block;
+  }
+
+  .inline-list > li {
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  .intro-window {
+    width: 700px;
+  }
+
+  .intro-window p {
+    font-size: 32px;
+    padding: 16px;
+  }
+
+  .img-margin--left {
+    margin-left: 16px;
+  }
+
+  .img-margin--right {
+    margin-right: 16px;
+  }
 }
