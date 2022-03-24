@@ -13,9 +13,9 @@ const Navigation = () => {
         <StyledNavigation>
             <button className="nav-button" onClick={() => toggleNav()}>Menu</button>
             <ul className={isNavOpen ? 'is-open' : ''}>
-                <li><Link href="/">Home</Link></li>
+                {/* <li><Link href="/">Home</Link></li> */}
                 {/* <li><Link href="">About</Link></li> */}
-                <li><a href="https://elethompson.com/old-portfolio/" target="_blank">My Old Portfolio</a></li>
+                <li><a href="https://elethompson.com/old-portfolio/" target="_blank" rel="noreferrer">My Old Portfolio</a></li>
                 <li><Link href="#contact">Contact</Link></li>
             </ul>
         </StyledNavigation>

@@ -8,7 +8,7 @@ const Footer = ({ ...props }) => {
             <div className="container">
                 <FooterHeading>Contact Me!</FooterHeading>
                 <p>The easiest way to contact me is to send me a message through <a href="">LinkedIn</a>!</p>
-                <SocialButton className="linkedin-btn" color="#0A66C2" href="https://www.linkedin.com/in/elevilathompson/" target="_blank">
+                <SocialButton className="linkedin-btn" color="#0A66C2" href="https://www.linkedin.com/in/elevilathompson/" target="_blank" rel="noopener">
                   <img className="social-icon" src="/icon/linkedin.svg" />
                   LinkedIn
                 </SocialButton>

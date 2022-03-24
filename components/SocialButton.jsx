@@ -20,8 +20,9 @@ const StyledSocialButton = styled.a`
     width: 100%;
 
     &:hover,
-    &:focus {
-        box-shadow: inset 9.5em 0 0 0 ${props => props.color};
+    &:focus,
+    &:active {
+        background-color: ${props => props.color};
         color: #fff;
 
         img {
@@ -31,6 +32,12 @@ const StyledSocialButton = styled.a`
 
     @media only screen and (min-width: 992px) {
         margin-bottom: 16px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            box-shadow: inset 9.5em 0 0 0 ${props => props.color};
+        }
     }
 `;
 

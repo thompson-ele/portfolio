@@ -14,12 +14,12 @@ const PortfolioRedesign: NextPage = () => {
   
         <main className="container">
           <h1>Portfolio Redesign</h1>
-          <p>The last time I updated my web portfolio was when I was preparing to interview for my current job at REVOLVE and let's be real: 
-              the majority of devs don't update their portfolio unless they're on the job hunt. I also don't have a ton of free time to just be 
+          <p>The last time I updated my web portfolio was when I was preparing to interview for my current job at REVOLVE and let&apos;s be real: 
+              the majority of devs don&apos;t update their portfolio unless they&apos;re on the job hunt. I also don&apos;t have a ton of free time to just be 
               creating web projects on the side between working full-time and my side hobbies or hustles. Work/life balance is definitely a priority 
               for me.</p>
 
-          <p>Because of this I decided the best way to show how I've progressed in the last 4-5 years or so would be for me to examine my old portfolio 
+          <p>Because of this I decided the best way to show how I&apos;ve progressed in the last 4-5 years or so would be for me to examine my old portfolio 
               and see what things I would change if I were updating it with my current web knowledge.</p>
 
           <p>Some areas that I want to focus on include:</p>
